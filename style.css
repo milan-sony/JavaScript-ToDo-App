@@ -1,25 +1,25 @@
-.head-container{
+.head-container {
   margin-top: 50px;
 }
-.head-title{
+.head-title {
   margin: 0;
   text-align: center;
   padding-bottom: 20px;
 }
-.form-group{
+.form-group {
   display: flex;
 }
-.form-group input{
+.form-group input {
   margin-right: 10px;
   outline: none;
   border: none;
   border-radius: 10px;
   background-color: red;
 }
-.form-group input::placeholder{
+.form-group input::placeholder {
   color: white;
 }
-.form-group button{
+.form-group button {
   background-color: red;
   color: black;
   outline: none;
@@ -27,16 +27,16 @@
   border-radius: 10px;
   transition: 0.4s ease;
 }
-.form-group button:hover{
+.form-group button:hover {
   background-color: black;
   color: red;
 }
-#list-items li{
+#list-items li {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
 }
-.list-content button{
+.list-content button {
   margin: 0 5px;
   appearance: none;
   outline: none;
