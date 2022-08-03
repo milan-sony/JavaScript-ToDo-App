@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
       return;
     }
 
-    //! Method 2 -> Created one li element with Bootstrap class names then created one span named spanEl1 for inserting inputData then created one more span named spanEl2 for inserting/listing all icons
+    //! Created one li element with Bootstrap class names then created one span named spanEl1 for inserting inputData then created one more span named spanEl2 for inserting/listing all icons
 
     //* Create li element to list items
 
@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     let checkIcon = document.createElement("i");
     checkIcon.classList.add("fa-solid", "fa-circle-check");
     spanEl2.appendChild(checkIcon);
-    checkIcon.style.color = "red";
+    checkIcon.style.color = "#4d668b";
 
     //* Add Eventlistener to checkIcon
     checkIcon.addEventListener("click", function () {
@@ -61,6 +61,7 @@ window.addEventListener("load", () => {
     let deleteIcon = document.createElement("i");
     deleteIcon.classList.add("fa-solid", "fa-trash-can");
     spanEl2.appendChild(deleteIcon);
+    deleteIcon.style.color = "red";
 
     //* Add EventListener to deleteIcon
 
@@ -68,26 +69,5 @@ window.addEventListener("load", () => {
     function deleteContent() {
       listItems.removeChild(li);
     }
-
-    // //! Method 1 -> one li and inside li one span and inside span all i class
-
-    // let li = document.createElement("li");
-    // li.innerText = inputData;
-    // listItems.appendChild(li);
-
-    // let span = document.createElement("span");
-    // li.appendChild(span);
-
-    // let checkBtn = document.createElement("i");
-    // checkBtn.classList.add("fa-solid","fa-circle-check");
-    // span.appendChild(checkBtn);
-
-    // let editBtn = document.createElement("i");
-    // editBtn.classList.add("fa-solid","fa-pen-to-square");
-    // span.appendChild(editBtn);
-
-    // let deleteBtn = document.createElement("i");
-    // deleteBtn.classList.add("fa-solid","fa-trash-can");
-    // span.appendChild(deleteBtn);
   });
 });

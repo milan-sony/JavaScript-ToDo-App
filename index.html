@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO APP</title>
+    <title>+ TODO APP</title>
     <!--Bootstrap CDN Link V4.6.2-->
     <link
       rel="stylesheet"
@@ -17,6 +17,13 @@
       src="https://kit.fontawesome.com/259d0ad731.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -25,7 +32,7 @@
     <div class="container head-container">
       <div class="row">
         <div class="col-sm-6 mx-auto">
-          <h1 class="head-title">TODO APP</h1>
+          <h1 class="head-title"><i class="fa-solid fa-clipboard-list"></i>&nbspTODO APP</h1>
           <form id="input-form">
             <div class="form-group">
               <input
@@ -33,6 +40,7 @@
                 class="form-control"
                 id="text-input"
                 placeholder="Enter Here..."
+                autocomplete="off"
               />
               <button class="btn btn-primary" id="add-btn">
                 <i class="fa-solid fa-plus"></i>
@@ -46,17 +54,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 mx-auto">
-          <h3>Your List Items</h3>
+          <h3 class="list-title">Your List Items</h3>
           <ul class="list-group list-group-flush" id="list-items">
-            <!-- <li>
-              Sample Text
-              <span>
-              <i class="fa-solid fa-circle-check"></i>
-              <i class="fa-solid fa-pen-to-square"></i>
-              <i class="fa-solid fa-trash-can"></i>
-              </span>
-            </li> -->
-
             <!-- <li class="list-group-item list-content">
               <span>Sample Text 1</span>
               <span>

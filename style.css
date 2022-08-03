@@ -1,9 +1,32 @@
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --drk-blue: #4d668b;
+  --lite-blue:#b5d5dc;
+  --lite-white:#f3f4f9;
+  --lite-grey:#e0e3e4;
+  --font: 'Roboto', sans-serif;
+}
+body{
+  background-color: var(--lite-white);
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--drk-blue);
+}
 .head-container {
   margin-top: 50px;
 }
 .head-title {
   margin: 0;
   text-align: center;
+  color: var(--drk-blue);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: var(--font);
   padding-bottom: 20px;
 }
 .form-group {
@@ -14,30 +37,49 @@
   outline: none;
   border: none;
   border-radius: 10px;
-  background-color: red;
+  background-color:var(--lite-grey);
+}
+.form-group input:focus{
+  background-color: var(--lite-grey);
+  outline: none;
+  border: none;
 }
 .form-group input::placeholder {
-  color: white;
+  font-family: var(--font);
+  color: var(--drk-blue);
 }
 .form-group button {
-  background-color: red;
-  color: black;
+  background-color: var(--lite-grey);
+  color: var(--drk-blue);
   outline: none;
   border: none;
   border-radius: 10px;
   transition: 0.4s ease;
 }
+.form-group button:focus{
+  background-color: var(--lite-grey);
+  color: var(--drk-blue);
+  outline: none;
+  border: none;
+}
 .form-group button:hover {
-  background-color: black;
-  color: red;
+  background-color: var(--lite-blue);
+  color: var(--lite-grey);
+}
+.list-title{
+  color: var(--drk-blue);
+  font-family: var(--font);
+  font-size: 15px;
 }
 #list-items li {
   display: flex;
+  font-family: var(--font);
+  color: var(--drk-blue);
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 20px;
 }
 .list-content i {
-  margin: 0 10px;
+  margin: 0 25px;
   appearance: none;
   outline: none;
   border: none;
