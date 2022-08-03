@@ -36,7 +36,7 @@
   justify-content: space-between;
   font-size: 15px;
 }
-#list-items li i {
+.list-content i {
   margin: 0 10px;
   appearance: none;
   outline: none;
