@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO APP</title>
+  <!--Bootstrap CDN Link V4.6.2-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Font Awesome 4 CDN -->
+  <script src="https://kit.fontawesome.com/259d0ad731.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container head-container">
+    <div class="row">
+      <div class="col-sm-6 mx-auto">
+        <h1 class="head-title">TODO APP</h1>
+        <form id="input-form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="text-input" placeholder="Enter Here...">
+            <button class="btn btn-primary" id="add-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mx-auto">
+        <h3>Your List Items</h3>
+        <ul class="list-group list-group-flush" id="list-items">
+          <li class="list-group-item list-content">
+            <span>Sample Text</span>
+            <span>
+              <button id="complete"><i class="fa-solid fa-circle-check"></i></button>
+              <button id="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+              <button id="delete"><i class="fa-solid fa-trash-can"></i></button>
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

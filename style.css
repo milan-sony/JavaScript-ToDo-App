@@ -1,0 +1,44 @@
+.head-container{
+  margin-top: 50px;
+}
+.head-title{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.form-group{
+  display: flex;
+}
+.form-group input{
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+}
+.form-group input::placeholder{
+  color: white;
+}
+.form-group button{
+  background-color: red;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+.form-group button:hover{
+  background-color: black;
+  color: red;
+}
+#list-items li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.list-content button{
+  margin: 0 5px;
+  appearance: none;
+  outline: none;
+  border: none;
+}
