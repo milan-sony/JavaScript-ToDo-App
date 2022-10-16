@@ -1,3 +1,5 @@
-A ToDo App as part of learning JavaScript.
+# JavaScript ToDo App
 
-Live Link: https://milan-sony.github.io/JavaScript-ToDo_App/
+A simple todo app using javascript
+
+[Live link](https://milan-sony.github.io/third_eye/)
